@@ -1,4 +1,4 @@
-
+require 'pry'
 require_relative 'config/environment'
 
 class App < Sinatra::Base
@@ -14,7 +14,7 @@ class App < Sinatra::Base
   end
 
   post '/puppy' do
-     
+     binding.pry
     
     erb :display_puppy
   end
